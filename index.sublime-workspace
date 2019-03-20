@@ -1,0 +1,342 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"border-r",
+				"border-right\tproperty"
+			],
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"b",
+				"background\tproperty"
+			],
+			[
+				"d",
+				"display\tproperty"
+			],
+			[
+				"st",
+				"style\tAttr"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"is",
+				"isset"
+			],
+			[
+				"sc",
+				"scene"
+			],
+			[
+				"cl",
+				"clientInfo"
+			],
+			[
+				"em",
+				"email"
+			],
+			[
+				"ac",
+				"account"
+			],
+			[
+				"us",
+				"userInfo"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"session",
+				"session_start"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"acc",
+				"access_token"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"Clin",
+				"client"
+			],
+			[
+				"sess",
+				"session_id"
+			],
+			[
+				"cr",
+				"createtime"
+			],
+			[
+				"e",
+				"echo\techo \"…\""
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"php",
+				"phpfmt: format now"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"phpfmt",
+				"phpfmt: format now"
+			],
+			[
+				"install",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/web/vue/vue-manage-system/src/api/login.js",
+		"/D/web/vue/vue-manage-system/src/api/regist.js",
+		"/D/web/vue/vue-manage-system/src/components/common/Sidebar.vue",
+		"/D/web/vue/vue-manage-system/config/index.js",
+		"/D/web/vue/vue-manage-system/src/router/index.js",
+		"/D/web/vue/vue-manage-system/src/components/page/Dashboard.vue",
+		"/D/web/vue/vue-manage-system/src/components/common/Home.vue",
+		"/D/web/vue/vue-manage-system/node_modules/vue-schart/src/vue-schart.vue",
+		"/D/web/vue/crib-ziksang-master/src/pages/methods/methods.vue",
+		"/D/web/vue/demo1-project/src/pages/home/index.vue",
+		"/D/web/vue/demo1-project/src/main.js",
+		"/D/web/vue/demo1-project/src/static/global.scss",
+		"/D/web/vue/demo1-project/src/static/css/global.css",
+		"/D/Program Files/Adobe/AdobeAuditionCC2018/resources/UpdateRedirector.dat",
+		"/D/web/vue/demo1-project/.babelrc.备份",
+		"/D/web/vue/demo1-project/build/webpack.base.conf.js",
+		"/D/web/vue/demo1-project/package.json",
+		"/D/web/vue/demo1-project/src/pages/index.vue",
+		"/D/web/vue/demo1-project/src/router/index.js",
+		"/D/web/vue/crib-ziksang-master/src/components/sms-countDown.vue",
+		"/D/web/vue/demo1-project/.babelrc",
+		"/D/web/vue/demo1-project/src/components/HelloWorld.vue",
+		"/D/web/vue/demo-element/package.json",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/config/cache.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/config/cookie.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/controller/user/UserAccount.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/public/index.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/model/UserToken.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/common/utils/Check.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/common/utils/Code.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/Validate/UserAccount.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/model/UserAccount.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/controller/Code.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/controller/Oauth.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/controller/Base.php",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/phpfmt.sublime-settings",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/Validate/UserToken.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/common.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/logic/UserAccount.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/common/utils/Chenk.php",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Base File.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/DocBlockr/README.md",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/config/session.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/thinkphp/library/think/Controller.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/config/app.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/controller/Token.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/Validate/Token.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/Validate/Login.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/config/cache.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/config/session.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/runtime/file/think/b0/68931cc450442b63f5b3d276ea4297.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/vendor/topthink/think-captcha/src/Captcha.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/vendor/topthink/think-captcha/src/Captcha1.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/config/log.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/config/log.php",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/CodeFormatter/CodeFormatter.sublime-settings",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/model/Login.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/model/LoginThird.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/common/utils/Validate.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/route/route.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/controller/LoginThird.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/controller/User.php",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/CodeFormatter.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/phpfmt/phpfmt.sublime-settings"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "index.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 482.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

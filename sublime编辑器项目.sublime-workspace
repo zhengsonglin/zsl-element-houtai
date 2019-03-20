@@ -1,0 +1,618 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ti",
+				"timep"
+			],
+			[
+				"parse",
+				"parseInt"
+			],
+			[
+				"str",
+				"stringify"
+			],
+			[
+				"border-r",
+				"border-right\tproperty"
+			],
+			[
+				"text-a",
+				"text-align\tproperty"
+			],
+			[
+				"col",
+				"color\tproperty"
+			],
+			[
+				"b",
+				"background\tproperty"
+			],
+			[
+				"d",
+				"display\tproperty"
+			],
+			[
+				"st",
+				"style\tAttr"
+			],
+			[
+				"w",
+				"width"
+			],
+			[
+				"is",
+				"isset"
+			],
+			[
+				"sc",
+				"scene"
+			],
+			[
+				"cl",
+				"clientInfo"
+			],
+			[
+				"em",
+				"email"
+			],
+			[
+				"ac",
+				"account"
+			],
+			[
+				"us",
+				"userInfo"
+			],
+			[
+				"user",
+				"user_id"
+			],
+			[
+				"pass",
+				"password"
+			],
+			[
+				"pu",
+				"public"
+			],
+			[
+				"session",
+				"session_start"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"acc",
+				"access_token"
+			],
+			[
+				"ret",
+				"return"
+			],
+			[
+				"Clin",
+				"client"
+			],
+			[
+				"sess",
+				"session_id"
+			],
+			[
+				"cr",
+				"createtime"
+			],
+			[
+				"e",
+				"echo\techo \"…\""
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/main.js",
+			"settings":
+			{
+				"buffer_size": 3531,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "static/css/main.css",
+			"settings":
+			{
+				"buffer_size": 2577,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/components/page/Userlist.vue",
+			"settings":
+			{
+				"buffer_size": 13889,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "// console.log(urlEncode(arr||obj).slice(1))//调用\nvar Arr = {\n\n\n}\nvar Obj={\n\tupdate(oldobj,newobj){\n\t\tfor(var p in oldobj){\n\t\t\tif(newobj[p]){\n\t\t\t\toldobj[p]= newobj[p];\n\t\t\t}\n\t\t}\n\t\treturn oldobj;\n\t}\n}\n  module.exports = {\n    // CusBASE64: __BASE64,\n\tObj:Obj,//\n\tobjUpdate:Obj.update\n\t// encoder:base64decode\n  }",
+			"file": "src/components/common/lt/Array.js",
+			"file_size": 333,
+			"file_write_time": 131865795077173051,
+			"settings":
+			{
+				"buffer_size": 309,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "var Utils={\nformatTime(time) {\n\tif (typeof time !== 'number' || time < 0) {\n\t\treturn time\n\t}\n\n\tvar hour = parseInt(time / 3600)\n\ttime = time % 3600\n\tvar minute = parseInt(time / 60)\n\ttime = time % 60\n\tvar second = time\n\n\treturn ([hour, minute, second]).map(function (n) {\n\t\tn = n.toString()\n\t\treturn n[1] ? n : '0' + n\n\t}).join(':')\n},\ntoTimestamp(date,num){\n\t\tvar num =parseInt(num);\n\t\tif(isNaN(num)){\n\t\t\tnum =1000;\n\t\t}\n\tvar date= date;//'2014-04-23 18:55:49:123'\n\treturn Date.parse(new Date(date))/num;\n\t// return (new Date(date)).getTime()/num;\n    // 有三种方式获取\n    //var date = new Date(date)\n    // var time1 = date.getTime();\n    // var time2 = date.valueOf();\n    // var time3 = Date.parse(date);\n},\n\t\t/**var time=new Date(parseInt(1420184730) * 1000).format('yyyy年M月d日');\n\t\t * 月(M)、日(d)、小时(h)、分(m)、秒(s) 毫秒(S)、季度(q) 可以用 1-2 个占位符，\n\t\t * 年(y)可以用 1-4 个占位符，毫秒(S)只能用 1 个占位符(是 1-3 位的数字)\n\t\t * 例子：\n\t\t * (new Date()).format(\"yyyy-MM-dd hh:mm:ss.S\") ==> 2006-07-02 08:09:04.423\n\t\t * */\n\tformatDate(timep,timetype) {\n\t\tif(timep && parseInt(timep)!=timep){\n\t\t\t// 判断时间戳是否是数字，不是数字原数据返回\n\t\t\treturn timep;\n\t\t}else if(!timep){\n\t\t\tvar timep =Date.parse(new Date())/1000;\n\t\t}else if(timep.length==10){\n\t\t\tvar timep = parseInt(timep)\n\t\t}else if(timep.length>10){\n\t\tvar timep =timep.substring(0, 10);\n\t\t}\n\t\t// return '收到'+timep;\n\n\t\t  var timetype = timetype || \"yyyy-M-d hh:mm:ss\";\n\t\t  Date.prototype.format = function (fmt) { //author: meizz\n\t\t    var o = {\n\t\t      \"M+\": this.getMonth() + 1, //月份\n\t\t      \"d+\": this.getDate(), //日\n\t\t      \"h+\": this.getHours(), //小时\n\t\t      \"m+\": this.getMinutes(), //分\n\t\t      \"s+\": this.getSeconds(), //秒\n\t\t      \"q+\": Math.floor((this.getMonth() + 3) / 3), //季度\n\t\t      \"S\": this.getMilliseconds() //毫秒\n\t\t    };\n\t\t    if (/(y+)/.test(fmt)) fmt = fmt.replace(RegExp.$1, (this.getFullYear() + \"\").substr(4 - RegExp.$1.length));\n\t\t    for (var k in o)\n\t\t      if (new RegExp(\"(\" + k + \")\").test(fmt))\n\t\t        fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : ((\"00\" + o[k]).substr((\"\" + o[k]).length)));\n\t\t    return fmt;\n\t\t  }\n\t\t  var time = new Date(parseInt(timep) * 1000).format(timetype);\n\t\t  return time;\n\t\t},\nformatLocation(longitude, latitude) {\n\tif (typeof longitude === 'string' && typeof latitude === 'string') {\n\t\tlongitude = parseFloat(longitude)\n\t\tlatitude = parseFloat(latitude)\n\t}\n\n\tlongitude = longitude.toFixed(2)\n\tlatitude = latitude.toFixed(2)\n\n\treturn {\n\t\tlongitude: longitude.toString().split('.'),\n\t\tlatitude: latitude.toString().split('.')\n\t}\n},\ndateUtils:{\n\tUNITS: {\n\t\t'年': 31557600000,\n\t\t'月': 2629800000,\n\t\t'天': 86400000,\n\t\t'小时': 3600000,\n\t\t'分钟': 60000,\n\t\t'秒': 1000\n\t},\n\thumanize: function (milliseconds) {\n\t\tvar humanize = '';\n\t\tfor (var key in this.UNITS) {\n\t\t\tif (milliseconds >= this.UNITS[key]) {\n\t\t\t\thumanize = Math.floor(milliseconds / this.UNITS[key]) + key + '前';\n\t\t\t\tbreak;\n\t\t\t}\n\t\t}\n\t\treturn humanize || '刚刚';\n\t},\n\tformat: function (dateStr) {\n\t\tvar date = this.parse(dateStr)\n\t\tvar diff = Date.now() - date.getTime();\n\t\tif (diff < this.UNITS['天']) {\n\t\t\treturn this.humanize(diff);\n\t\t}\n\t\tvar _format = function (number) {\n\t\t\treturn (number < 10 ? ('0' + number) : number);\n\t\t};\n\t\treturn date.getFullYear() + '/' + _format(date.getMonth() + 1) + '/' + _format(date.getDay()) + '-' +\n\t\t\t_format(date.getHours()) + ':' + _format(date.getMinutes());\n\t},\n\tparse: function (str) { //将\"yyyy-mm-dd HH:MM:ss\"格式的字符串，转化为一个Date对象\n\t\tvar a = str.split(/[^0-9]/);\n\t\treturn new Date(a[0], a[1] - 1, a[2], a[3], a[4], a[5]);\n\t}\n}\n/**\n * 获取时间戳 默认10位,\n */\n,getTime(num){\n\tvar num =parseInt(num);\n\tif(isNaN(num)){\n\t\tnum =1000;\n\t}\n\n\treturn Date.parse(new Date())/num;\n}\n}\n\nexport default {\n\ttoTimestamp:Utils.toTimestamp,//日期时间转成时间戳\n\tgetTime:Utils.getTime,//当前时间戳\n\t// formatTime:Utils.formatTime,\n\tformatDate:Utils.formatDate,//时间戳转日期\n\t// formatLocation:Utils.formatLocation,\n\tdateUtils:Utils.dateUtils,//距离时间\n}\n",
+			"file": "src/components/common/lt/Time.js",
+			"file_size": 4304,
+			"file_write_time": 131865609424647684,
+			"settings":
+			{
+				"buffer_size": 3861,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/components/common/index.js",
+			"settings":
+			{
+				"buffer_size": 292,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"php",
+				"phpfmt: format now"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"phpfmt",
+				"phpfmt: format now"
+			],
+			[
+				"install",
+				"Install Package Control"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/web/vue/vue-manage-system",
+		"/D/web/vue/vue-manage-system/src",
+		"/D/web/vue/vue-manage-system/src/components",
+		"/D/web/vue/vue-manage-system/src/components/common",
+		"/D/web/vue/vue-manage-system/src/components/page",
+		"/D/web/vue/vue-manage-system/src/router"
+	],
+	"file_history":
+	[
+		"/D/web/vue/vue-manage-system/dist/index.html",
+		"/D/web/vue/vue-manage-system/src/components/common/lt/Time.js",
+		"/D/web/vue/vue-manage-system/src/api/user/regist.js",
+		"/D/web/vue/vue-manage-system/src/App.vue",
+		"/D/web/vue/vue-manage-system/src/components/page/BaseTable.vue.bak",
+		"/D/web/vue/vue-manage-system/src/router/index.js",
+		"/D/web/vue/vue-manage-system/src/components/common/Sidebar.vue",
+		"/D/web/vue/vue-manage-system/src/axiosConfig/axiosConfig.js",
+		"/D/web/vue/vue-manage-system/src/api/index.js",
+		"/D/web/vue/vue-manage-system/src/api/user/list.js",
+		"/D/web/vue/vue-manage-system/src/api/user/login.js",
+		"/D/web/vue/vue-manage-system/src/components/page/Userlist.vue",
+		"/D/web/vue/vue-manage-system/src/components/common/Home.vue",
+		"/D/web/vue/vue-manage-system/src/common/index.js",
+		"/D/web/vue/vue-manage-system-3.1.0/src/main.js",
+		"/D/web/vue/vue-manage-system/src/api/login.js",
+		"/D/web/vue/vue-manage-system/src/api/regist.js",
+		"/D/web/vue/vue-manage-system/config/index.js",
+		"/D/web/vue/vue-manage-system/src/components/page/Dashboard.vue",
+		"/D/web/vue/vue-manage-system/node_modules/vue-schart/src/vue-schart.vue",
+		"/D/web/vue/crib-ziksang-master/src/pages/methods/methods.vue",
+		"/D/web/vue/demo1-project/src/pages/home/index.vue",
+		"/D/web/vue/demo1-project/src/main.js",
+		"/D/web/vue/demo1-project/src/static/global.scss",
+		"/D/web/vue/demo1-project/src/static/css/global.css",
+		"/D/Program Files/Adobe/AdobeAuditionCC2018/resources/UpdateRedirector.dat",
+		"/D/web/vue/demo1-project/.babelrc.备份",
+		"/D/web/vue/demo1-project/build/webpack.base.conf.js",
+		"/D/web/vue/demo1-project/package.json",
+		"/D/web/vue/demo1-project/src/pages/index.vue",
+		"/D/web/vue/demo1-project/src/router/index.js",
+		"/D/web/vue/crib-ziksang-master/src/components/sms-countDown.vue",
+		"/D/web/vue/demo1-project/.babelrc",
+		"/D/web/vue/demo1-project/src/components/HelloWorld.vue",
+		"/D/web/vue/demo-element/package.json",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/config/cache.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/config/cookie.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/controller/user/UserAccount.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/public/index.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/model/UserToken.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/common/utils/Check.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/common/utils/Code.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/Validate/UserAccount.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/model/UserAccount.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/controller/Code.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/controller/Oauth.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/controller/Base.php",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/phpfmt.sublime-settings",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/Validate/UserToken.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/common.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/logic/UserAccount.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/common/utils/Chenk.php",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Base File.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/Package Control/Package Control.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/DocBlockr/README.md",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/config/session.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/thinkphp/library/think/Controller.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/config/app.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/controller/Token.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/Validate/Token.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/Validate/Login.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/config/cache.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/config/session.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/runtime/file/think/b0/68931cc450442b63f5b3d276ea4297.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/vendor/topthink/think-captcha/src/Captcha.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/vendor/topthink/think-captcha/src/Captcha1.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/config/log.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/config/log.php",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/CodeFormatter/CodeFormatter.sublime-settings",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/model/Login.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/model/LoginThird.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/common/utils/Validate.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/route/route.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/controller/LoginThird.php",
+		"/D/phpStudy/PHPTutorial/WWW/restfulapi/application/api/controller/User.php",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/CodeFormatter.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/User/Package Control.sublime-settings",
+		"/C/Users/Administrator/AppData/Roaming/Sublime Text 3/Packages/phpfmt/phpfmt.sublime-settings"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 104.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"message",
+			"name",
+			"date",
+			"../",
+			"ref"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3531,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2759,
+								2753
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "static/css/main.css",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 2577,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								114,
+								52
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CSS/CSS.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/components/page/Userlist.vue",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 13889,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								12689,
+								12689
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Vue Syntax Highlight/Vue Component.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "src/components/common/lt/Array.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 309,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								309,
+								49
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "src/components/common/lt/Time.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3861,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3861,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "src/components/common/index.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 292,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								206,
+								206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 39.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "sublime编辑器项目.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"D:\\phpStudy\\PHPTutorial\\WWW\\restfulapi\\restfulapi项目sublime快捷.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 482.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
